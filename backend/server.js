@@ -1,4 +1,4 @@
-require("dotenv").config(); // dotenv packaged required and initiliazed on the go
+const dotenv = require("dotenv").config({ path: "./config.env" }); // dotenv packaged required and initiliazed on the go
 const app = require("./app");
 const connectMongoDB = require("./database");
 
