@@ -4,6 +4,8 @@ const userRouter = require("./routes/userRoute.js");
 const morgan = require("morgan");
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 if ((process.env.NODE_ENV = "developement")) {
   app.use(morgan("tiny")); // logging info about user(request) using morgan package, see more about morgan on npm registry
 }
