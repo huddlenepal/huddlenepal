@@ -1,4 +1,9 @@
-// note next isn't necessary
+exports.home = (req, res, next) => {
+  res.status(200).json({
+    message: 'this is home'
+  })
+}
+
 exports.how_we_work = (req, res, next) => {
     res.status(200).json({
         message: 'how we work page'
