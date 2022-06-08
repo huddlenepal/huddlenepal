@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const userRouter = require("./routes/userRoute.js");
+const navRouter = require("./routes/navRoute");
 const morgan = require("morgan");
 
 app.use(express.json());
